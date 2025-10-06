@@ -153,13 +153,13 @@
     },
     {
       "name": "Asset Tracking & Warehouse Monitoring",
-      "url": "http://45.149.206.36:30200/login",
+      "url": "http://45.149.206.36:30200",
       "username": "001",
       "password": "Pass@123"
     },
     {
       "name": "Vehicle Tracking & Fleet Management",
-      "url": "Eyeline Platform"
+      "url": "http://localhost:30200/login"
     },
     {
       "name": "AI-Powered Invoice Management",

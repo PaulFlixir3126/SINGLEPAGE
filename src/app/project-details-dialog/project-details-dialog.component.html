@@ -1,0 +1,30 @@
+<div class="p-2">
+  <h1 mat-dialog-title class="mb-3">{{ data.title }}</h1>
+  <div mat-dialog-content>
+    <p class="lead">{{ data.description }}</p>
+
+    <a [href]="data.projectUrl" mat-flat-button color="primary" target="_blank" class="w-100 mb-4">
+      Open Project <mat-icon>launch</mat-icon>
+    </a>
+
+    <h5 class="mb-3">Login Credentials</h5>
+    <div *ngFor="let cred of data.credentials" class="credential-card mb-3">
+      <h6>{{ cred.role }}</h6>
+      <div class="d-flex justify-content-between align-items-center mb-2">
+        <span><strong>User:</strong> {{ cred.username }}</span>
+        <button mat-icon-button (click)="copyToClipboard(cred.username)" matTooltip="Copy Username">
+          <mat-icon>content_copy</mat-icon>
+        </button>
+      </div>
+      <div class="d-flex justify-content-between align-items-center">
+        <span><strong>Pass:</strong> {{ cred.password }}</span>
+        <button mat-icon-button (click)="copyToClipboard(cred.password)" matTooltip="Copy Password">
+          <mat-icon>content_copy</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Close</button>
+  </div>
+</div>

@@ -1,0 +1,69 @@
+<div class="dashboard container-fluid">
+  <header>
+    <h1>Projects Dashboard</h1>
+    <p class="subtitle">All portals in one place — quick access</p>
+  </header>
+
+  <div class="search">
+    <mat-icon>search</mat-icon>
+    <input
+      matInput
+      placeholder="Search systems, URLs, or usernames..."
+      [(ngModel)]="searchText"
+      (input)="onSearch()"
+    />
+  </div>
+
+  <div class="grid">
+    <mat-card
+      *ngFor="let s of filteredSystems"
+      [ngClass]="getColorClass(s.name)"
+      class="system-card"
+    >
+      <div class="card-header">
+        <mat-icon>{{ getIcon(s.name) }}</mat-icon>
+        <h2>{{ s.name }}</h2>
+      </div>
+
+      <div class="card-body">
+        <p>
+          <strong>🌐 URL:</strong>
+          <a [href]="s.url" target="_blank">{{ s.url }}</a>
+        </p>
+
+        <!-- ✅ Single user -->
+        <div *ngIf="!s.accounts?.length && s.username">
+          <p><strong>👤 Username:</strong> {{ s.username }}</p>
+          <p><strong>🔐 Password:</strong> {{ s.password }}</p>
+        </div>
+
+        <!-- ✅ Multiple accounts -->
+        <div *ngIf="s.accounts?.length">
+          <p><strong>👥 Accounts:</strong></p>
+          <ul class="account-list">
+            <li *ngFor="let acc of s.accounts">
+              <mat-icon>person</mat-icon>
+              <span *ngIf="acc.role">{{ acc.role }} - </span>
+              <span class="cred">👤 {{ acc.username }}</span> /
+              <span class="cred">🔐 {{ acc.password }}</span>
+            </li>
+          </ul>
+        </div>
+
+        <div *ngIf="s.note" class="note">
+          📝 {{ s.note }}
+        </div>
+
+        <ul *ngIf="s.notes?.length" class="notes">
+          <li *ngFor="let n of s.notes">🗒️ {{ n }}</li>
+        </ul>
+      </div>
+
+      <div class="card-footer">
+        <button mat-raised-button color="primary" (click)="openLink(s.url)">
+          <mat-icon>open_in_new</mat-icon> Open Portal
+        </button>
+      </div>
+    </mat-card>
+  </div>
+</div>

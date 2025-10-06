@@ -1,0 +1,177 @@
+{
+  "systems": [
+    {
+      "name": "Hostel",
+      "url": "http://klehostel.flixirsolutions.com/",
+      "username": "admin",
+      "password": "hostel"
+    },
+    {
+      "name": "KLE Quarters",
+      "url": "http://klequarters.flixirsolutions.com/",
+      "username": "admin",
+      "password": "admin123456"
+    },
+    {
+      "name": "Moodle (LMS)",
+      "url": "http://194.5.152.32/server/login/index.php  ",
+      "username": "admin",
+      "password": "Admin@123"
+    },
+    {
+      "name": "Shailesh Portal",
+      "url": "https://eclassroom.prelive.co.in/"
+    },
+    {
+      "name": "DMS - Inward",
+      "url": "http://45.10.192.153:9090/projects/dms/index.php/core/login",
+      "username": "inward",
+      "password": "admin"
+    },
+    {
+      "name": "DMS - Registrar",
+      "url": "http://45.10.192.153:9090/projects/dms/index.php/core/login  ",
+      "username": "registrar",
+      "password": "admin"
+    },
+    {
+      "name": "DMS - Department",
+      "url": "http://45.10.192.153:9090/projects/dms/index.php/core/login  ",
+      "accounts": [
+        { "username": "VC", "password": "admin" },
+        { "username": "IT", "password": "admin" },
+        { "username": "pro", "password": "admin" },
+        { "username": "accounts", "password": "admin" }
+      ]
+    },
+    {
+      "name": "Fin Asset",
+      "url": "http://45.10.192.153:9090/projects/fin_assist/index.php/core  ",
+      "accounts": [
+        { "role": "Staff", "username": "101111008", "password": "admin" },
+        { "role": "HOD", "username": "hod", "password": "admin" },
+        { "role": "Registrar", "username": "registrar", "password": "admin" },
+        { "role": "Finance", "username": "finance", "password": "admin" }
+      ]
+    },
+    {
+      "name": "Online Answer Sheet Evaluator",
+      "url": "http://94.136.189.156:8081/",
+       "accounts": [
+        { "role": "admin", "username": "admin@gmail.com", "password": "admin@123" },
+        { "role": "evaluator1", "username": "steve@gmail.com", "password": "password" },
+        { "role": "evaluator1", "username": "kork@gmail.com", "password": "password" },
+        { "role": "evaluator2", "username": "mark@gmail.com", "password": "password" },
+        { "role": "moderator", "username": "vijay@gmail.com", "password": "password" },
+        { "role": "chief moderator", "username": "arun@gmail.com", "password": "password" }
+      ],
+      "note": "good luck"
+    },
+    {
+      "name": "HRMS",
+      "url": "http://27.107.130.31:9704/login",
+      "username": "admin@gmail.com",
+      "password": "admin"
+    },
+    {
+      "name": "KKH UAT - Masters, Courses, Exams, etc.",
+      "url": "http://45.10.192.153:10001",
+      "username": "admin",
+      "password": "gLfG1"
+    },
+    {
+      "name": "KKH UAT - Intake & Attendance",
+      "url": "http://45.10.192.153:2001",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "name": "KKH UAT - Online Form & Student Portal",
+      "url": "http://45.10.192.153:10001",
+      "accounts": [
+        { "username": "7057549224", "password": "admin" },
+        { "username": "9812312871", "password": "admin" },
+        { "username": "9808088999", "password": "admin" }
+      ]
+    },
+    {
+      "name": "MUHS UAT - Center Allocation",
+      "url": "http://45.10.192.153:4001"
+    },
+    {
+      "name": "KKH UAT - Mark Entry",
+      "url": "http://45.10.192.153:1001",
+      "username": "admin",
+      "password": "gLfG1"
+    },
+    {
+      "name": "KLE UAT Old Data",
+      "url": "http://45.10.192.153:3001",
+      "username": "jyotsna",
+      "password": "admin",
+      "note": "Session: First half 2020, Exam: Fourth year pharma, Reg No: NP0115022"
+    },
+    {
+      "name": "Primary Education (UAT)",
+      "url": "https://45.149.206.36/CPE-UAT/login",
+      "accounts": [
+        { "username": "001", "password": "Pass@123" },
+        { "username": "CED01", "password": "Pass@123" },
+        { "username": "DG001", "password": "Pass@123" }
+      ]
+    },
+    {
+      "name": "Secondary Education (UAT)",
+      "url": "https://45.149.206.36/CSE-UAT/login",
+      "accounts": [
+        { "username": "001", "password": "Pass@123" },
+        { "username": "CED01", "password": "Pass@123" },
+        { "username": "DG001", "password": "Pass@123" }
+      ]
+    },
+    {
+      "name": "AI Database",
+      "url": "http://27.107.130.31:8009/",
+      "notes": [
+        "Sync the MUHS database from the database menu before proceeding.",
+        "List of students personal data",
+        "Top 100 students data with address",
+        "Admission details, Subject selection, Fees details"
+      ]
+    },
+    {
+      "name": "M2M / Industry 4.0 Factory Automation",
+      "url": "http://194.5.152.32:3010/login",
+      "username": "admin@gmail.com",
+      "password": "admin"
+    },
+    {
+      "name": "IoT-Based Fire Alarm & Safety",
+      "url": "http://194.5.152.32:3002/login",
+      "username": "Superadmin@smokesensor.com",
+      "password": "admin@123"
+    },
+    {
+      "name": "Asset Tracking & Warehouse Monitoring",
+      "url": "http://45.149.206.36:30200/login",
+      "username": "001",
+      "password": "Pass@123"
+    },
+    {
+      "name": "Vehicle Tracking & Fleet Management",
+      "url": "Eyeline Platform"
+    },
+    {
+      "name": "AI-Powered Invoice Management",
+      "url": "http://194.163.184.85:24601/login",
+      "username": "admin",
+      "password": "admin"
+    },
+    {
+      "name": "Automated Question Paper Setting Tool",
+      "url": "http://45.149.206.36:30100/login",
+      "username": "admin@gmail.com",
+      "password": "admin@123"
+    }   
+  ]
+}

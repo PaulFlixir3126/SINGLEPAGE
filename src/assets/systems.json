@@ -89,9 +89,9 @@
       "name": "KKH UAT - Online Form & Student Portal",
       "url": "http://45.10.192.153:10002",
       "accounts": [
-        { "username": "9808088999", "password": "admin" },
         { "username": "7057549224", "password": "admin" },
-        { "username": "9812312871", "password": "admin" }
+        { "username": "9812312871", "password": "admin" },
+        { "username": "9808088999", "password": "admin" }
         
       ]
     },

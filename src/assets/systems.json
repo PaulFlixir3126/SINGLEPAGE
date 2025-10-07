@@ -158,6 +158,12 @@
       "username": "001",
       "password": "Pass@123"
     },
+     {
+      "name": "Asset Tracking login Failed",
+      "url": " https://45.149.206.36/asst-dvp/api/v1/noauth/login",
+      "username": "use the url if login failed or using it for First Time",
+    },
+   
     {
       "name": "Vehicle Tracking & Fleet Management",
       "url": "http://localhost:30200/login"
